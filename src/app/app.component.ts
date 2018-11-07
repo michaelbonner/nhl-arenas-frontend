@@ -41,7 +41,7 @@ export class AppComponent {
 		new Arena( 'Philidelphia Flyers', 'assets/img/logos/philidelphia-flyers.svg', 'assets/img/icons/philidelphia-flyers.png', false, 39.9011809,-75.1742469 ),
 		new Arena( 'Pittsburgh Penguins', 'assets/img/logos/pittsburgh-penguins.svg', 'assets/img/icons/pittsburgh-penguins.png', true, 40.4395148,-79.9915569 ),
 		new Arena( 'San Jose Sharks', 'assets/img/logos/san-jose-sharks.svg', 'assets/img/icons/san-jose-sharks.png', true, 37.3260746,-121.900262 ),
-		new Arena( 'St Louis Blues', 'assets/img/logos/st-louis-blues.svg', 'assets/img/icons/st-louis-blues.png', false, 38.6265853,-90.2051319 ),
+		new Arena( 'St Louis Blues', 'assets/img/logos/st-louis-blues.svg', 'assets/img/icons/st-louis-blues.png', true, 38.6265853,-90.2051319 ),
 		new Arena( 'Tampa Bay Lightning', 'assets/img/logos/tampa-bay-lightning.svg', 'assets/img/icons/tampa-bay-lightning.png', true, 27.9835375,-82.4843154 ),
 		new Arena( 'Toronto Maple Leafs', 'assets/img/logos/toronto-maple-leafs.svg', 'assets/img/icons/toronto-maple-leafs.png', false, 43.6434661,-79.3790989 ),
 		new Arena( 'Vancouver Canucks', 'assets/img/logos/vancouver-canucks.svg', 'assets/img/icons/vancouver-canucks.png', false, 49.2778449,-123.1109512 ),
