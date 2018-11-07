@@ -1,0 +1,42 @@
+<h1>
+	<img [src]="logo" alt="NHL" height="35"> {{title}}
+</h1>
+
+<div class="form-group">
+	<label class="radio-inline">
+		<input type="radio" id="show_visited_all" name="show_visited" value="all" [(ngModel)]="show_visited"> All
+	</label>
+	<label class="radio-inline">
+		<input type="radio" id="show_visited_not" name="show_visited" value="not_visited" [(ngModel)]="show_visited"> Not Visited
+	</label>
+	<label class="radio-inline">
+		<input type="radio" id="show_visited" name="show_visited" value="visited" [(ngModel)]="show_visited"> Visited
+	</label>
+</div>
+
+<agm-map
+	[latitude]="lat"
+	[longitude]="lng"
+	[zoom]="zoom"
+	[disableDefaultUI]="false"
+	[zoomControl]="true">
+
+	<agm-marker
+		*ngFor="let arena of arenas | visited:show_visited; let i = index"
+		[hidden]="arena.visited"
+		[latitude]="arena.lat"
+		[longitude]="arena.lng"
+		[label]="arena.label"
+		[markerDraggable]="arena.draggable"
+		(dragEnd)="markerDragEnd(m, $event)"
+		[iconUrl]="arena.icon"
+		>
+
+		<agm-info-window>
+			<img [src]="arena.img">
+			<strong>{{ arena.title }}</strong>
+		</agm-info-window>
+
+	</agm-marker>
+
+</agm-map>
