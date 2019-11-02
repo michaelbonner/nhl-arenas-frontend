@@ -46,7 +46,7 @@ export class AppComponent {
 		new Arena( 'Toronto Maple Leafs', 'assets/img/logos/toronto-maple-leafs.svg', 'assets/img/icons/toronto-maple-leafs.png', false, 43.6434661,-79.3790989 ),
 		new Arena( 'Vancouver Canucks', 'assets/img/logos/vancouver-canucks.svg', 'assets/img/icons/vancouver-canucks.png', false, 49.2778449,-123.1109512 ),
 		new Arena( 'Vegas Golden Knights', 'assets/img/logos/vegas-golden-knights.svg', 'assets/img/icons/vegas-golden-knights.png', true, 36.1028767,-115.1784324 ),
-		new Arena( 'Washington Capitals', 'assets/img/logos/washington-capitals.svg', 'assets/img/icons/washington-capitals.png', false, 38.8884197,-77.1006833 ),
+		new Arena( 'Washington Capitals', 'assets/img/logos/washington-capitals.svg', 'assets/img/icons/washington-capitals.png', true, 38.8884197,-77.1006833 ),
 		new Arena( 'Winnipeg Jets', 'assets/img/logos/winnipeg-jets.svg', 'assets/img/icons/winnipeg-jets.png', false, 49.8926174,-97.1437393 ),
 	]
 }
